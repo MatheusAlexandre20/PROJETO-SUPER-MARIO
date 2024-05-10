@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Brothers</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="./index.html"><img src="./Rosto do mario.jpg"></a>
+        <a href="./index.html">Home</a>
+        <a onclick="cliqueiNoBotão()">Fale conosco</a>
+        <a href="./nossos-serviços.html">Nossos Serviços</a>
+    </div>
+
+    <div class="caixa-video-mario">
+        <video src="video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+
+    <div class="caixa-principal">
+        <img src="the super mario bros.jpg" alt="logo" class="Logo-supermario">
+        <p>Encanadores Mario & Luigi - resolvendo Seus Problemas Com estilo!</p>
+        <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos
+            ou torneiras que não param de pingar?
+            Não se pereocupe, porque estamos aqui para salvar o dia!
+        </p>
+        <button class="botão-de-formulario" onclick="cliqueiNoBotão()">Fale Conosco</button>
+    </div>
+
+    <form class="faleconosco" 
+        action="https://formcarry.com/s/U5uwzp3O8oN" 
+        method="POST" 
+        enctype="multipart/form-data">
+            <h2 class="caixa">Fale Conosco</h2>
+            <input placeholder=" Seu nome" type="text" name="Nome">
+            <input placeholder=" Telefone" type="tel" name="Telefone">
+            <textarea placeholder=" Digite seu problema aqui" name="Dúvida"></textarea>
+            <button class="botão-de-formulario" onclick="sumirFormulário()" type="submit">Pedir Orçamento</button>
+
+    </form>
+
+    <div class="mascara-form" onclick="sumirFormulário()"></div>
+
+
+
+    <img src="Mario e Luigi.jpg" alt="logo mario e luigi" class="logo-marioeluigi">
+
+    <a href="https://wa.me/5531996500563" class="logo-zap">
+        <img src="./Logo do whatsapp.jpg" alt="link para whatsapp">
+    </a>
+
+    <script src="./scripts.js"></script>
+
+
+</body>
+
+
+
+</html>
